@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7487b425c0ca90189a4b44aa6838cd89",
+    "content-hash": "0ae6e17850a74eb4229d513adaf5b9e8",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -611,6 +611,54 @@
                 "source": "https://github.com/php-fig/log/tree/2.0.0"
             },
             "time": "2021-07-14T16:41:46+00:00"
+        },
+        {
+            "name": "sjaakp/yii2-icon",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sjaakp/yii2-icon.git",
+                "reference": "1ed03cb3ca66301a1e9e3cb84708d465bdcd8e7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sjaakp/yii2-icon/zipball/1ed03cb3ca66301a1e9e3cb84708d465bdcd8e7d",
+                "reference": "1ed03cb3ca66301a1e9e3cb84708d465bdcd8e7d",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "sjaakp\\icon\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sjaak Priester",
+                    "email": "sjaak@sjaakpriester.nl",
+                    "homepage": "https://sjaakpriester.nl"
+                }
+            ],
+            "description": "Raw SVG icons in Yii2",
+            "keywords": [
+                "FontAwesome",
+                "icon",
+                "svg",
+                "yii",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/sjaakp/yii2-icon/issues",
+                "source": "https://github.com/sjaakp/yii2-icon/tree/1.2.0"
+            },
+            "time": "2022-05-03T14:15:01+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",

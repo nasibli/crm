@@ -15,6 +15,9 @@ class AppAsset extends AssetBundle
         'css/site.css',
     ];
     public $js = [
+        'js/fontawesome-free-6.2.1-web/js/solid.js',
+        'js/fontawesome-free-6.2.1-web/js/regular.js',
+        'js/fontawesome-free-6.2.1-web/js/fontawesome.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

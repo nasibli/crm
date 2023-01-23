@@ -9,12 +9,17 @@ $params = array_merge(
 return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
+    'name' => 'CRM',
+    'homeUrl' => ['applications'],
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
+            'parsers' => [
+                'application/json' => 'yii\web\JsonParser',
+            ],
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -37,14 +42,24 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'site/login' => 'site/login',
+                'applications' => 'applications/index',
+                'applications/status/<id:\d+>' => 'applications/status',
+                'users' => 'user/index',
+                'users/create' => 'user/create',
+                'users/update/<id:\d+>' => 'user/update',
+                'users/activate/<id:\d+>' => 'user/activate',
+                'users/delete/<id:\d+>' => 'user/delete',
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'api/applications'],
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'api/application-statuses']
             ],
         ],
-        */
+
     ],
     'params' => $params,
 ];
